@@ -1,5 +1,6 @@
 package part1;
 
+import io.qameta.allure.Description;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,6 +28,7 @@ public class FirstSeleniumTest {
     }
 
 
+    @Description("sample test3")
     public void testLogInIntoApplication() throws InterruptedException {
         Thread.sleep(2000);
         WebElement username = driver.findElement(By.name("username"));

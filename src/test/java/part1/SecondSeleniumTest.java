@@ -1,5 +1,6 @@
 package part1;
 
+import io.qameta.allure.Description;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -56,6 +57,7 @@ public class SecondSeleniumTest {
     }
 
     @Test
+    @Description("sample test2")
     public void browserWaiting() {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));  //implicit - general wait time for all elements in the script. It automatically waits for elements to appear before throwing a NoSuchElementException. However, it can lead to longer test execution times if overused.
 
